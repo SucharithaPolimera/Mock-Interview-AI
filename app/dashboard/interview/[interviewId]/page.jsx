@@ -44,7 +44,7 @@ function Interview({params}) {
           onUserMedia = {()=>setWebCamEnabled(true)} 
           onUserMediaError={()=>setWebCamEnabled(false)} 
           mirrored={true}
-          style={{height: 300, width: 300}}
+          style={{height: "100%", width: "100%"}}
           /> 
           : <>
               <WebcamIcon className='h-72 w-full p-20 my-7 bg-secondary rounded-lg border'/>
@@ -53,7 +53,7 @@ function Interview({params}) {
           }
         </div>
       </div>
-      <div className='flex justify-end items-end'>
+      <div className='flex justify-end items-end mt-10'>
         <Link href={'/dashboard/interview/'+interviewId+'/start'}>
           <Button>Start Interview</Button>
         </Link>

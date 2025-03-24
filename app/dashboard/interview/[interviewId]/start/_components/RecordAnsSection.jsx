@@ -67,10 +67,10 @@ function RecordAnsSection({mockInterviewQuestion, activeQuestionIndex, interview
 
     return (
         <div className='flex items-center justify-center flex-col'>
-            <div className='flex flex-col justify-center mt-20 items-center rounded-lg p-5 bg-black'>
+            <div className='flex flex-col justify-center mt-10 items-center rounded-lg bg-black'>
                 <Image src={'/webcam.png'} width={200} height={200} className='absolute'/>
                 <Webcam mirrored={true}
-                    style={{height: 300, width: "100%", zIndex: 10}}
+                    style={{height: "100%", width: "100%", zIndex: 10}}
                 />
             </div>
             <Button disabled={isLoading} variant="outline" className="my-10" onClick={StartStopRecording}>
