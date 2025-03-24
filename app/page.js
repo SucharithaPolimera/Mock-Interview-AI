@@ -1,6 +1,6 @@
 'use client';
 import SignInPage from './(auth)/sign-in/[[...sign-in]]/page';
-import SignOutPage from './(auth)/sign-up/[[...sign-up]]/page';
+import SignUpPage from './(auth)/sign-up/[[...sign-up]]/page';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 
@@ -19,10 +19,10 @@ export default function Home() {
         {typeof window !== 'undefined' && (window.location.href = '/dashboard')}
       </SignInPage>
 
-      <SignOutPage>
+      <SignUpPage>
         <SignInPage afterSignInUrl="/dashboard" />
-        {mode === 'signup' ? <SignUp afterSignUpUrl="/dashboard" /> : <SignIn afterSignInUrl="/dashboard" />}
-      </SignOutPage>
+        {mode === 'signup' ? <SignUpPage afterSignUpUrl="/dashboard" /> : <SignUpPage afterSignInUrl="/dashboard" />}
+      </SignUpPage>
     </div>
   );
 }

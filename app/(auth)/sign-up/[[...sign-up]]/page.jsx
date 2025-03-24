@@ -1,6 +1,6 @@
 import { SignUp } from '@clerk/nextjs'
 
-export default function SignOutPage() {
+export default function SignUpPage() {
   return  ( <div className="flex min-h-screen">
         {/* Left Side - Image with Bottom Heading & Description Overlay */}
         <div className="hidden lg:flex w-1/2 h-screen relative items-center justify-center">
